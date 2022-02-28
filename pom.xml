@@ -17,10 +17,10 @@
 		<relativePath/>
 	</parent>
 
-	<groupId>com.freemanpivo.chassi</groupId>
-	<artifactId>alurachallenge</artifactId>
+	<groupId>com.pedrozanon.chassi</groupId>
+	<artifactId>garage</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>alurachallenge</name>
+	<name>garage</name>
 	<description>Alura Challenge Back-End Project</description>
 
 	<properties>
