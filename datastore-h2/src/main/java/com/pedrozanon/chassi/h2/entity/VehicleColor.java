@@ -10,14 +10,14 @@ import javax.persistence.*;
 @NoArgsConstructor
 @Data
 @Entity
-@Table(name = "COMBUSTIVEL")
-public class Fuel {
+@Table(name = "COR")
+public class VehicleColor {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "combustivel_id", unique = true, nullable = false)
+    @Column(name = "cor_id")
     private Long id;
 
-    @Column(name = "nome_combustivel", nullable = false)
-    private String fuelName;
+    @Column(name = "nome_cor")
+    private String colorName;
 }

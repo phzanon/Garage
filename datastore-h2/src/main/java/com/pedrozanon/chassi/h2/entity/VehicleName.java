@@ -5,19 +5,24 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+import java.util.List;
 
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
 @Entity
-@Table(name = "COMBUSTIVEL")
-public class Fuel {
+@Table(name = "NOME_VEICULO")
+public class VehicleName {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "combustivel_id", unique = true, nullable = false)
+    @Column(name = "id", unique = true, nullable = false)
     private Long id;
 
-    @Column(name = "nome_combustivel", nullable = false)
-    private String fuelName;
+    @Column(name = "nome_veiculo")
+    private String vehicleName;
+
+    @OneToMany
+    @JoinColumn(name = "modelo_id")
+    private List<CarModel> carModel;
 }

@@ -8,9 +8,9 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 
 @SpringBootApplication
-@ComponentScan(basePackages = {"com.freemanpivo.chassi"})
-@EntityScan(basePackages = {"com.freemanpivo.chassi.h2"})
-@EnableJpaRepositories(basePackages = {"com.freemanpivo.chassi.h2"})
+@ComponentScan(basePackages = {"com.pedrozanon.chassi"})
+@EntityScan(basePackages = {"com.pedrozanon.chassi.h2"})
+@EnableJpaRepositories(basePackages = {"com.pedrozanon.chassi.h2"})
 public class GarageApplication {
 
     public static void main(String[] args) {

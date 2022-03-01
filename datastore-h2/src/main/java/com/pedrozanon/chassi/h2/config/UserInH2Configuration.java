@@ -22,4 +22,6 @@ public class UserInH2Configuration {
             repository.save(new VideoEntity(3L, new CategoryEntity(1L, "LIVRE", "AZUL"), "Duro de Matar 2", "Descrição", "url://"));
         };
     }*/
+
+
 }

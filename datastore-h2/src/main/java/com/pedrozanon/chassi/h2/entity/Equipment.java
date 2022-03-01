@@ -5,19 +5,21 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+import java.util.List;
 
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
 @Entity
-@Table(name = "COMBUSTIVEL")
-public class Fuel {
+@Table(name = "EQUIPAMENTO")
+public class Equipment {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "combustivel_id", unique = true, nullable = false)
+    @Column(name = "id", unique = true, nullable = false)
     private Long id;
 
-    @Column(name = "nome_combustivel", nullable = false)
-    private String fuelName;
+    @Column(name = "nome_equipamento")
+    private String equipmentName;
+    
 }
